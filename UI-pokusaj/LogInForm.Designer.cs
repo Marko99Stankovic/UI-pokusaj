@@ -36,10 +36,11 @@ namespace WindowsFormsApp1
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelReg = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -95,7 +96,7 @@ namespace WindowsFormsApp1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(130)))));
-            this.label2.Location = new System.Drawing.Point(96, 247);
+            this.label2.Location = new System.Drawing.Point(96, 250);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 16);
             this.label2.TabIndex = 5;
@@ -126,17 +127,17 @@ namespace WindowsFormsApp1
             this.textBoxPassword.Size = new System.Drawing.Size(166, 24);
             this.textBoxPassword.TabIndex = 6;
             // 
-            // label3
+            // labelReg
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(130)))));
-            this.label3.Location = new System.Drawing.Point(119, 331);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 16);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Izađi";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.labelReg.AutoSize = true;
+            this.labelReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelReg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(130)))));
+            this.labelReg.Location = new System.Drawing.Point(114, 341);
+            this.labelReg.Name = "labelReg";
+            this.labelReg.Size = new System.Drawing.Size(41, 16);
+            this.labelReg.TabIndex = 7;
+            this.labelReg.Text = "Izađi";
+            this.labelReg.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox3
             // 
@@ -170,13 +171,25 @@ namespace WindowsFormsApp1
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(51, 314);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(178, 15);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Novi korisnik? Registruj se";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // LogInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(283, 377);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(278, 377);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelReg);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.label2);
@@ -212,7 +225,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelReg;
+        private System.Windows.Forms.Label label4;
     }
 }
 
