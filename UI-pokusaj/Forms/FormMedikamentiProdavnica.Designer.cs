@@ -44,8 +44,6 @@ namespace UI_pokusaj.Forms
             this.btnPoruci = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.richTextBoxADRESA = new System.Windows.Forms.RichTextBox();
-            this.checkBoxPouzecem = new System.Windows.Forms.CheckBox();
-            this.checkBoxOnlinePlacanje = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxBrojTelefona = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -59,6 +57,8 @@ namespace UI_pokusaj.Forms
             this.shopTableAdapter = new UI_pokusaj.BazaDataSetTableAdapters.ShopTableAdapter();
             this.bindingSourceCena = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxCena = new System.Windows.Forms.ComboBox();
+            this.radioButtonPouzecem = new System.Windows.Forms.RadioButton();
+            this.radioButtonOnline = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceShop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -203,30 +203,6 @@ namespace UI_pokusaj.Forms
             this.richTextBoxADRESA.TabIndex = 12;
             this.richTextBoxADRESA.Text = "";
             // 
-            // checkBoxPouzecem
-            // 
-            this.checkBoxPouzecem.AutoSize = true;
-            this.checkBoxPouzecem.Location = new System.Drawing.Point(199, 22);
-            this.checkBoxPouzecem.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBoxPouzecem.Name = "checkBoxPouzecem";
-            this.checkBoxPouzecem.Size = new System.Drawing.Size(123, 28);
-            this.checkBoxPouzecem.TabIndex = 14;
-            this.checkBoxPouzecem.Text = "Pouzecem";
-            this.checkBoxPouzecem.UseVisualStyleBackColor = true;
-            this.checkBoxPouzecem.CheckedChanged += new System.EventHandler(this.checkBoxPouzecem_CheckedChanged);
-            // 
-            // checkBoxOnlinePlacanje
-            // 
-            this.checkBoxOnlinePlacanje.AutoSize = true;
-            this.checkBoxOnlinePlacanje.Location = new System.Drawing.Point(199, 51);
-            this.checkBoxOnlinePlacanje.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBoxOnlinePlacanje.Name = "checkBoxOnlinePlacanje";
-            this.checkBoxOnlinePlacanje.Size = new System.Drawing.Size(105, 28);
-            this.checkBoxOnlinePlacanje.TabIndex = 15;
-            this.checkBoxOnlinePlacanje.Text = "Karticom";
-            this.checkBoxOnlinePlacanje.UseVisualStyleBackColor = true;
-            this.checkBoxOnlinePlacanje.CheckedChanged += new System.EventHandler(this.checkBoxOnlinePlacanje_CheckedChanged);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -317,8 +293,8 @@ namespace UI_pokusaj.Forms
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBoxPouzecem);
-            this.groupBox1.Controls.Add(this.checkBoxOnlinePlacanje);
+            this.groupBox1.Controls.Add(this.radioButtonOnline);
+            this.groupBox1.Controls.Add(this.radioButtonPouzecem);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(20, 234);
@@ -348,6 +324,28 @@ namespace UI_pokusaj.Forms
             this.comboBoxCena.TabIndex = 27;
             this.comboBoxCena.ValueMember = "ShopID";
             this.comboBoxCena.SelectedIndexChanged += new System.EventHandler(this.comboBoxCena_SelectedIndexChanged);
+            // 
+            // radioButtonPouzecem
+            // 
+            this.radioButtonPouzecem.AutoSize = true;
+            this.radioButtonPouzecem.Location = new System.Drawing.Point(160, 23);
+            this.radioButtonPouzecem.Name = "radioButtonPouzecem";
+            this.radioButtonPouzecem.Size = new System.Drawing.Size(122, 28);
+            this.radioButtonPouzecem.TabIndex = 16;
+            this.radioButtonPouzecem.TabStop = true;
+            this.radioButtonPouzecem.Text = "Pouzecem";
+            this.radioButtonPouzecem.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonOnline
+            // 
+            this.radioButtonOnline.AutoSize = true;
+            this.radioButtonOnline.Location = new System.Drawing.Point(160, 53);
+            this.radioButtonOnline.Name = "radioButtonOnline";
+            this.radioButtonOnline.Size = new System.Drawing.Size(87, 28);
+            this.radioButtonOnline.TabIndex = 17;
+            this.radioButtonOnline.TabStop = true;
+            this.radioButtonOnline.Text = "Online";
+            this.radioButtonOnline.UseVisualStyleBackColor = true;
             // 
             // FormMedikamentiProdavnica
             // 
@@ -407,8 +405,6 @@ namespace UI_pokusaj.Forms
         private System.Windows.Forms.Button btnPoruci;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox richTextBoxADRESA;
-        private System.Windows.Forms.CheckBox checkBoxPouzecem;
-        private System.Windows.Forms.CheckBox checkBoxOnlinePlacanje;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBoxBrojTelefona;
         private System.Windows.Forms.Label label8;
@@ -424,5 +420,7 @@ namespace UI_pokusaj.Forms
         private BazaDataSetTableAdapters.ShopTableAdapter shopTableAdapter;
         private System.Windows.Forms.BindingSource bindingSourceCena;
         private System.Windows.Forms.ComboBox comboBoxCena;
+        private System.Windows.Forms.RadioButton radioButtonOnline;
+        private System.Windows.Forms.RadioButton radioButtonPouzecem;
     }
 }
