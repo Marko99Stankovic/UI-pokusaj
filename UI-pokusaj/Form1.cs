@@ -89,6 +89,7 @@ namespace UI_pokusaj
         private void buttonEXIT_Click(object sender, EventArgs e)
         {
             Close();
+            Application.Exit();
         }
         private void buttonMaximize_Click(object sender, EventArgs e)
         {
