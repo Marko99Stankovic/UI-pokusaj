@@ -94,10 +94,5 @@ namespace UI_pokusaj.Forms
         {
            //postoji samo zbog preuzimanja cene
         }
-
-        private void textBoxPostanskiBroj_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
