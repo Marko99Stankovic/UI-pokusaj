@@ -115,6 +115,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormReg.resx">
+      <DependentUpon>FormReg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormKontaktZakazivanje.resx">
       <DependentUpon>FormKontaktZakazivanje.cs</DependentUpon>
     </EmbeddedResource>
