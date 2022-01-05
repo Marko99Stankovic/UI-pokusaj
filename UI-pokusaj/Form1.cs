@@ -26,13 +26,8 @@ namespace UI_pokusaj
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg,int wParam,int lParam);
 
-        //--------------------------test
-        int btnFlag = 0;
-        //--------------------------test
-
-
-    //-----------------------------------------------------------
-    public void loadform(object Form)
+        //-----------------------------------------------------------
+        public void loadform(object Form)
         {
             if (this.panelForma.Controls.Count > 0)
                 this.panelForma.Controls.RemoveAt(0);
@@ -47,87 +42,25 @@ namespace UI_pokusaj
         //----------------------------------------------------------
         private void buttonZdravlje_Click(object sender, EventArgs e)
         {
-
-            //---------------------------test
-            if (btnFlag == 1)
-            {
-                var res = MessageBox.Show("Da li ste sigurni? Korpa ce biti prazna", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (res == DialogResult.Yes)
-                {
-       //             MessageBox.Show($"Kliknuto je yes Flag={btnFlag}"); //provera /obrisati u konacnoj fazi
-                    loadform(new Forms.FormZdravlje());
-                    labelBar1.Text = "Zdravlje";
-                    btnFlag = 0;//reset flaga
-                    buttonMedikament.Enabled = true;
-                }
-            }
-            else
-            {
-                loadform(new Forms.FormZdravlje());
-                labelBar1.Text = "Zdravlje";
-            }
-            
-            //---------------------------test
-
+            loadform(new Forms.FormZdravlje());
+            labelBar1.Text = "Zdravlje";
         }
         private void buttonMedikament_Click(object sender, EventArgs e)
         {
             loadform(new Forms.FormMedikamentiProdavnica());
             labelBar1.Text = "VetShop";
-            //----------------------test
-            btnFlag = 1;                        //test brisi
-            //lokalni flag---sluzi da zaustavi reset stranice prilikom ponovnog klika na dugme za otvaranje shopa
-            buttonMedikament.Enabled = false;
-
-
-            //----------------------test        
         }
         private void buttonZakazi_Click(object sender, EventArgs e)
         {
-            //-------------------------------------------staro
-            //loadform(new Forms.FormKontaktZakazivanje());
-            //labelBar1.Text = "Zakazivanje";
-            //-------------------------------------------staro
-            //---------------------------test
-            if (btnFlag == 1)
-            {
-                var res = MessageBox.Show("Da li ste sigurni? Korpa ce biti prazna", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (res == DialogResult.Yes)
-                {
-                    loadform(new Forms.FormKontaktZakazivanje());
-                    labelBar1.Text = "Zakazivanje";
-                    btnFlag = 0;//reset flaga
-                    buttonMedikament.Enabled = true;
-                }
-            }
-            else
-            {
-                loadform(new Forms.FormKontaktZakazivanje());
-                labelBar1.Text = "Zakazivanje";
-            }
-
-            //---------------------------test
+            loadform(new Forms.FormKontaktZakazivanje());
+            labelBar1.Text = "Zakazivanje";
         }
         private void buttonZivotinje_Click(object sender, EventArgs e)
         {
-            //loadform(new Forms.FormOnama());
-            //labelBar1.Text = "Istorija vaseg ljubimca";
-            if (btnFlag == 1)
-            {
-                var res = MessageBox.Show("Da li ste sigurni? Korpa ce biti prazna", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (res == DialogResult.Yes)
-                {
-                    loadform(new Forms.FormOnama());
-                    labelBar1.Text = "Istorija vaseg ljubimca";
-                    btnFlag = 0;//reset flaga
-                    buttonMedikament.Enabled = true;
-                }
-            }
-            else
-            {
-                loadform(new Forms.FormOnama());
-                labelBar1.Text = "Istorija vaseg ljubimca";
-            }
+            loadform(new Forms.FormOnama());
+            //promeni labelu
+            labelBar1.Text = "Istorija vaseg ljubimca";
+            
         }
         //------------------------------------------------------------------------------
 
