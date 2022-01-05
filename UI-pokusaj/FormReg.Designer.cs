@@ -1,4 +1,3 @@
-﻿
 namespace UI_pokusaj
 {
     partial class FormReg
