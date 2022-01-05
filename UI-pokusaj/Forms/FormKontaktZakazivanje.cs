@@ -25,6 +25,8 @@ namespace UI_pokusaj.Forms
         {
             // TODO: This line of code loads data into the 'bazaDataSet1.Veterinar' table. You can move, or remove it, as needed.
             this.veterinarTableAdapter.Fill(this.bazaDataSet1.Veterinar);
+            //TODO: This line of code loads data into the 'bazaDataSet1.Ljubimac' table. You can move, or remove it, as needed.
+            this.ljubimacTableAdapter.Fill(this.bazaDataSet1.Ljubimac);
 
         }
 
@@ -60,35 +62,18 @@ namespace UI_pokusaj.Forms
 
         private void buttonZakazi_Click(object sender, EventArgs e)
         {
-            //za svako polje odraditi ovo                                       //dodati za ostala polja
-            if(textBoxVlasnik.Text !="" && textBoxBrojTelefonaUnos.Text != "" && textBoxPrezimeVlasnika.Text != "" && textBoxImeZivotinje.Text !="" )
+            //kad se preuredi baza dodaj sve
+            if (textBoxRazlogPregledaUnos.Text != "")
             {
-                //pravljenje novog reda
-                var row = bazaDataSet1.Vlasnik.NewVlasnikRow();
-                //popunjavanje row-a
-                row.Ime = textBoxVlasnik.Text;
-                row.Prezime = textBoxPrezimeVlasnika.Text;
-                row.Broj_telefona = textBoxBrojTelefonaUnos.Text;
+                //  var row = bazaDataSet1.Pregledi.NewPregledRow();
 
-                //dodati ostala polja 
-
-
-
-
-
-
-
-                //-------------------------------------------------------------------------------------------------------------
-                //dodavanje u dataset
-                bazaDataSet1.Vlasnik.AddVlasnikRow(row);
-                //upis u bazu//azuriranje baze
-                vlasnikTableAdapter.Update(bazaDataSet1);
-                //textBoxVlasnik.Text = ""; //ovo nam ne treba //da ocisti polje za unos vlasnika nakon unosa vlasnika
-                //-------------------------------------------------------------------------------------------------------------
             }
+
+
+
             else
             {
-                MessageBox.Show("Popunite sva polja");
+                MessageBox.Show("Popunite sva polja!");
             }
         }
 
@@ -96,6 +81,72 @@ namespace UI_pokusaj.Forms
         {
             //?Razmotriti ovo----da li da brise iz baze poslednju unetu stavku klikom na dugme zakazi?
             //defaultno da bude disable, a nakon klika na zakazi postaje enable....--^
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            labelImeZiv.Hide();
+            labelVrstaZiv.Hide();
+            labelRasaZiv.Hide();
+            labelDatumRodj.Hide();
+            labelPolZiv.Hide();
+            textBoxImeZivotinje.Hide();
+            textBoxUnosVrsteZivotinje.Hide();
+            textBoxUnosrase.Hide();
+            dateTimePickerrodj.Hide();
+            radioButtonPolM.Hide();
+            radioButtonPolZ.Hide();
+            buttonDodajLjubimca.Hide();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDodajLjubimca_Click(object sender, EventArgs e)
+        {
+            if (textBoxImeZivotinje.Text != "" && textBoxUnosVrsteZivotinje.Text != "" && textBoxUnosrase.Text != "")
+            {
+                var row = bazaDataSet1.Ljubimac.NewLjubimacRow();
+                row.Ime = textBoxImeZivotinje.Text;
+                row.Vrsta = textBoxUnosVrsteZivotinje.Text;
+                row.Rasa = textBoxUnosrase.Text;
+                if (radioButtonPolZ.Checked)
+                    row.Pol = "Z";
+                else row.Pol = "M";
+                row.Rodjendan = dateTimePickerrodj.Value;
+                //vet?????
+                //vlasnik nekako nzm
+                bazaDataSet1.Ljubimac.AddLjubimacRow(row);
+                ljubimacTableAdapter.Update(bazaDataSet1);
+
+                MessageBox.Show($"Dodat je {textBoxImeZivotinje.Text} kao Vaš novi ljubimac", "Možete zakazati pregled", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxImeZivotinje.Clear();
+                textBoxUnosVrsteZivotinje.Clear();
+                textBoxUnosrase.Clear();
+                dateTimePickerrodj.ResetText();
+                radioButtonPolM.Checked = false;
+                radioButtonPolZ.Checked = false;
+            }
+            else
+                MessageBox.Show("Popuni sva polja!");
+        }
+
+        private void buttonDa_Click(object sender, EventArgs e)
+        {
+            labelImeZiv.Show();
+            labelVrstaZiv.Show();
+            labelRasaZiv.Show();
+            labelDatumRodj.Show();
+            labelPolZiv.Show();
+            textBoxImeZivotinje.Show();
+            textBoxUnosVrsteZivotinje.Show();
+            textBoxUnosrase.Show();
+            dateTimePickerrodj.Show();
+            radioButtonPolM.Show();
+            radioButtonPolZ.Show();
+            buttonDodajLjubimca.Show();
         }
     }
 }
