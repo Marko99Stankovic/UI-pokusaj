@@ -73,9 +73,10 @@
             // 
             this.labelVrstaZiv.AutoSize = true;
             this.labelVrstaZiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVrstaZiv.Location = new System.Drawing.Point(3, 245);
+            this.labelVrstaZiv.Location = new System.Drawing.Point(2, 199);
+            this.labelVrstaZiv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelVrstaZiv.Name = "labelVrstaZiv";
-            this.labelVrstaZiv.Size = new System.Drawing.Size(126, 22);
+            this.labelVrstaZiv.Size = new System.Drawing.Size(103, 18);
             this.labelVrstaZiv.TabIndex = 3;
             this.labelVrstaZiv.Text = "Vrsta životinje:";
             this.labelVrstaZiv.Visible = false;
@@ -84,18 +85,19 @@
             // 
             this.labelVeterinar.AutoSize = true;
             this.labelVeterinar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVeterinar.Location = new System.Drawing.Point(391, 140);
+            this.labelVeterinar.Location = new System.Drawing.Point(372, 111);
+            this.labelVeterinar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelVeterinar.Name = "labelVeterinar";
-            this.labelVeterinar.Size = new System.Drawing.Size(88, 22);
+            this.labelVeterinar.Size = new System.Drawing.Size(70, 18);
             this.labelVeterinar.TabIndex = 5;
             this.labelVeterinar.Text = "Veterinar:";
             // 
             // textBoxRazlogPregledaUnos
             // 
-            this.textBoxRazlogPregledaUnos.Location = new System.Drawing.Point(551, 100);
-            this.textBoxRazlogPregledaUnos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxRazlogPregledaUnos.Location = new System.Drawing.Point(507, 77);
+            this.textBoxRazlogPregledaUnos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxRazlogPregledaUnos.Name = "textBoxRazlogPregledaUnos";
-            this.textBoxRazlogPregledaUnos.Size = new System.Drawing.Size(243, 22);
+            this.textBoxRazlogPregledaUnos.Size = new System.Drawing.Size(183, 20);
             this.textBoxRazlogPregledaUnos.TabIndex = 6;
             this.textBoxRazlogPregledaUnos.TextChanged += new System.EventHandler(this.textBoxRazlogPregledaUnos_TextChanged);
             // 
@@ -103,36 +105,38 @@
             // 
             this.labelRazlogPregleda.AutoSize = true;
             this.labelRazlogPregleda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRazlogPregleda.Location = new System.Drawing.Point(391, 98);
+            this.labelRazlogPregleda.Location = new System.Drawing.Point(372, 77);
+            this.labelRazlogPregleda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRazlogPregleda.Name = "labelRazlogPregleda";
-            this.labelRazlogPregleda.Size = new System.Drawing.Size(145, 22);
+            this.labelRazlogPregleda.Size = new System.Drawing.Size(119, 18);
             this.labelRazlogPregleda.TabIndex = 7;
             this.labelRazlogPregleda.Text = "Razlog pregleda:";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(551, 181);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePicker1.Location = new System.Drawing.Point(505, 147);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(243, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(183, 20);
             this.dateTimePicker1.TabIndex = 8;
             // 
             // labelDatum
             // 
             this.labelDatum.AutoSize = true;
             this.labelDatum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDatum.Location = new System.Drawing.Point(391, 181);
+            this.labelDatum.Location = new System.Drawing.Point(372, 149);
+            this.labelDatum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDatum.Name = "labelDatum";
-            this.labelDatum.Size = new System.Drawing.Size(67, 22);
+            this.labelDatum.Size = new System.Drawing.Size(56, 18);
             this.labelDatum.TabIndex = 9;
             this.labelDatum.Text = "Datum:";
             // 
             // buttonOtkaziPregled
             // 
-            this.buttonOtkaziPregled.Location = new System.Drawing.Point(551, 224);
-            this.buttonOtkaziPregled.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonOtkaziPregled.Location = new System.Drawing.Point(505, 286);
+            this.buttonOtkaziPregled.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonOtkaziPregled.Name = "buttonOtkaziPregled";
-            this.buttonOtkaziPregled.Size = new System.Drawing.Size(119, 43);
+            this.buttonOtkaziPregled.Size = new System.Drawing.Size(89, 35);
             this.buttonOtkaziPregled.TabIndex = 10;
             this.buttonOtkaziPregled.Text = "Otkazi Pregled";
             this.buttonOtkaziPregled.UseVisualStyleBackColor = true;
@@ -140,10 +144,10 @@
             // 
             // buttonZakazi
             // 
-            this.buttonZakazi.Location = new System.Drawing.Point(676, 224);
-            this.buttonZakazi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonZakazi.Location = new System.Drawing.Point(599, 286);
+            this.buttonZakazi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonZakazi.Name = "buttonZakazi";
-            this.buttonZakazi.Size = new System.Drawing.Size(119, 43);
+            this.buttonZakazi.Size = new System.Drawing.Size(89, 35);
             this.buttonZakazi.TabIndex = 11;
             this.buttonZakazi.Text = "Zakazi pregled";
             this.buttonZakazi.UseVisualStyleBackColor = true;
@@ -175,9 +179,10 @@
             // 
             // textBoxImeZivotinje
             // 
-            this.textBoxImeZivotinje.Location = new System.Drawing.Point(141, 209);
+            this.textBoxImeZivotinje.Location = new System.Drawing.Point(106, 170);
+            this.textBoxImeZivotinje.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxImeZivotinje.Name = "textBoxImeZivotinje";
-            this.textBoxImeZivotinje.Size = new System.Drawing.Size(240, 22);
+            this.textBoxImeZivotinje.Size = new System.Drawing.Size(181, 20);
             this.textBoxImeZivotinje.TabIndex = 14;
             this.textBoxImeZivotinje.Visible = false;
             this.textBoxImeZivotinje.TextChanged += new System.EventHandler(this.textBoxImeZivotinje_TextChanged);
@@ -186,9 +191,10 @@
             // 
             this.labelImeZiv.AutoSize = true;
             this.labelImeZiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelImeZiv.Location = new System.Drawing.Point(3, 207);
+            this.labelImeZiv.Location = new System.Drawing.Point(2, 168);
+            this.labelImeZiv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelImeZiv.Name = "labelImeZiv";
-            this.labelImeZiv.Size = new System.Drawing.Size(112, 22);
+            this.labelImeZiv.Size = new System.Drawing.Size(93, 18);
             this.labelImeZiv.TabIndex = 15;
             this.labelImeZiv.Text = "Ime životinje:";
             this.labelImeZiv.Visible = false;
@@ -199,9 +205,10 @@
             this.comboBoxIzborVeterinara.DisplayMember = "Ime";
             this.comboBoxIzborVeterinara.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxIzborVeterinara.FormattingEnabled = true;
-            this.comboBoxIzborVeterinara.Location = new System.Drawing.Point(551, 138);
+            this.comboBoxIzborVeterinara.Location = new System.Drawing.Point(506, 111);
+            this.comboBoxIzborVeterinara.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxIzborVeterinara.Name = "comboBoxIzborVeterinara";
-            this.comboBoxIzborVeterinara.Size = new System.Drawing.Size(241, 24);
+            this.comboBoxIzborVeterinara.Size = new System.Drawing.Size(182, 21);
             this.comboBoxIzborVeterinara.TabIndex = 16;
             this.comboBoxIzborVeterinara.ValueMember = "VeterinarID";
             this.comboBoxIzborVeterinara.SelectedIndexChanged += new System.EventHandler(this.comboBoxIzborVeterinara_SelectedIndexChanged);
@@ -213,9 +220,10 @@
             // 
             // textBoxUnosVrsteZivotinje
             // 
-            this.textBoxUnosVrsteZivotinje.Location = new System.Drawing.Point(141, 247);
+            this.textBoxUnosVrsteZivotinje.Location = new System.Drawing.Point(106, 201);
+            this.textBoxUnosVrsteZivotinje.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxUnosVrsteZivotinje.Name = "textBoxUnosVrsteZivotinje";
-            this.textBoxUnosVrsteZivotinje.Size = new System.Drawing.Size(240, 22);
+            this.textBoxUnosVrsteZivotinje.Size = new System.Drawing.Size(181, 20);
             this.textBoxUnosVrsteZivotinje.TabIndex = 17;
             this.textBoxUnosVrsteZivotinje.Visible = false;
             this.textBoxUnosVrsteZivotinje.TextChanged += new System.EventHandler(this.textBoxUnosVrsteZivotinje_TextChanged);
@@ -228,9 +236,10 @@
             // 
             this.labelPolZiv.AutoSize = true;
             this.labelPolZiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.labelPolZiv.Location = new System.Drawing.Point(3, 331);
+            this.labelPolZiv.Location = new System.Drawing.Point(2, 269);
+            this.labelPolZiv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPolZiv.Name = "labelPolZiv";
-            this.labelPolZiv.Size = new System.Drawing.Size(41, 22);
+            this.labelPolZiv.Size = new System.Drawing.Size(34, 18);
             this.labelPolZiv.TabIndex = 18;
             this.labelPolZiv.Text = "Pol:";
             this.labelPolZiv.Visible = false;
@@ -239,9 +248,10 @@
             // 
             this.labelDatumRodj.AutoSize = true;
             this.labelDatumRodj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.labelDatumRodj.Location = new System.Drawing.Point(3, 370);
+            this.labelDatumRodj.Location = new System.Drawing.Point(2, 301);
+            this.labelDatumRodj.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDatumRodj.Name = "labelDatumRodj";
-            this.labelDatumRodj.Size = new System.Drawing.Size(132, 22);
+            this.labelDatumRodj.Size = new System.Drawing.Size(109, 18);
             this.labelDatumRodj.TabIndex = 19;
             this.labelDatumRodj.Text = "Datum rođenja:";
             this.labelDatumRodj.Visible = false;
@@ -250,9 +260,10 @@
             // 
             this.labelRasaZiv.AutoSize = true;
             this.labelRasaZiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.labelRasaZiv.Location = new System.Drawing.Point(3, 286);
+            this.labelRasaZiv.Location = new System.Drawing.Point(2, 232);
+            this.labelRasaZiv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRasaZiv.Name = "labelRasaZiv";
-            this.labelRasaZiv.Size = new System.Drawing.Size(126, 22);
+            this.labelRasaZiv.Size = new System.Drawing.Size(104, 18);
             this.labelRasaZiv.TabIndex = 21;
             this.labelRasaZiv.Text = "Rasa životinje:";
             this.labelRasaZiv.Visible = false;
@@ -262,17 +273,19 @@
             // 
             this.labelNoviLjubimac.AutoSize = true;
             this.labelNoviLjubimac.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.labelNoviLjubimac.Location = new System.Drawing.Point(103, 44);
+            this.labelNoviLjubimac.Location = new System.Drawing.Point(77, 36);
+            this.labelNoviLjubimac.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNoviLjubimac.Name = "labelNoviLjubimac";
-            this.labelNoviLjubimac.Size = new System.Drawing.Size(126, 22);
+            this.labelNoviLjubimac.Size = new System.Drawing.Size(104, 18);
             this.labelNoviLjubimac.TabIndex = 22;
             this.labelNoviLjubimac.Text = "Novi ljubimac?";
             // 
             // buttonDa
             // 
-            this.buttonDa.Location = new System.Drawing.Point(124, 82);
+            this.buttonDa.Location = new System.Drawing.Point(93, 67);
+            this.buttonDa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonDa.Name = "buttonDa";
-            this.buttonDa.Size = new System.Drawing.Size(75, 23);
+            this.buttonDa.Size = new System.Drawing.Size(56, 19);
             this.buttonDa.TabIndex = 23;
             this.buttonDa.Text = "Da";
             this.buttonDa.UseVisualStyleBackColor = true;
@@ -280,9 +293,10 @@
             // 
             // buttonNe
             // 
-            this.buttonNe.Location = new System.Drawing.Point(124, 111);
+            this.buttonNe.Location = new System.Drawing.Point(93, 90);
+            this.buttonNe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonNe.Name = "buttonNe";
-            this.buttonNe.Size = new System.Drawing.Size(75, 23);
+            this.buttonNe.Size = new System.Drawing.Size(56, 19);
             this.buttonNe.TabIndex = 24;
             this.buttonNe.Text = " Ne";
             this.buttonNe.UseVisualStyleBackColor = true;
@@ -290,9 +304,10 @@
             // 
             // textBoxUnosrase
             // 
-            this.textBoxUnosrase.Location = new System.Drawing.Point(141, 288);
+            this.textBoxUnosrase.Location = new System.Drawing.Point(106, 234);
+            this.textBoxUnosrase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxUnosrase.Name = "textBoxUnosrase";
-            this.textBoxUnosrase.Size = new System.Drawing.Size(240, 22);
+            this.textBoxUnosrase.Size = new System.Drawing.Size(181, 20);
             this.textBoxUnosrase.TabIndex = 25;
             this.textBoxUnosrase.Visible = false;
             // 
@@ -300,9 +315,10 @@
             // 
             this.radioButtonPolM.AutoSize = true;
             this.radioButtonPolM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.radioButtonPolM.Location = new System.Drawing.Point(154, 329);
+            this.radioButtonPolM.Location = new System.Drawing.Point(116, 267);
+            this.radioButtonPolM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonPolM.Name = "radioButtonPolM";
-            this.radioButtonPolM.Size = new System.Drawing.Size(45, 26);
+            this.radioButtonPolM.Size = new System.Drawing.Size(39, 22);
             this.radioButtonPolM.TabIndex = 26;
             this.radioButtonPolM.TabStop = true;
             this.radioButtonPolM.Text = "M";
@@ -313,9 +329,10 @@
             // 
             this.radioButtonPolZ.AutoSize = true;
             this.radioButtonPolZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.radioButtonPolZ.Location = new System.Drawing.Point(205, 329);
+            this.radioButtonPolZ.Location = new System.Drawing.Point(154, 267);
+            this.radioButtonPolZ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButtonPolZ.Name = "radioButtonPolZ";
-            this.radioButtonPolZ.Size = new System.Drawing.Size(42, 26);
+            this.radioButtonPolZ.Size = new System.Drawing.Size(35, 22);
             this.radioButtonPolZ.TabIndex = 27;
             this.radioButtonPolZ.TabStop = true;
             this.radioButtonPolZ.Text = "Ž";
@@ -324,9 +341,10 @@
             // 
             // dateTimePickerrodj
             // 
-            this.dateTimePickerrodj.Location = new System.Drawing.Point(141, 370);
+            this.dateTimePickerrodj.Location = new System.Drawing.Point(106, 301);
+            this.dateTimePickerrodj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePickerrodj.Name = "dateTimePickerrodj";
-            this.dateTimePickerrodj.Size = new System.Drawing.Size(240, 22);
+            this.dateTimePickerrodj.Size = new System.Drawing.Size(181, 20);
             this.dateTimePickerrodj.TabIndex = 28;
             this.dateTimePickerrodj.Visible = false;
             // 
@@ -334,9 +352,10 @@
             // 
             this.labelIzborVrste.AutoSize = true;
             this.labelIzborVrste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.labelIzborVrste.Location = new System.Drawing.Point(391, 19);
+            this.labelIzborVrste.Location = new System.Drawing.Point(372, 11);
+            this.labelIzborVrste.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelIzborVrste.Name = "labelIzborVrste";
-            this.labelIzborVrste.Size = new System.Drawing.Size(126, 22);
+            this.labelIzborVrste.Size = new System.Drawing.Size(103, 18);
             this.labelIzborVrste.TabIndex = 29;
             this.labelIzborVrste.Text = "Vrsta životinje:";
             // 
@@ -344,9 +363,10 @@
             // 
             this.labelIyborImena.AutoSize = true;
             this.labelIyborImena.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.labelIyborImena.Location = new System.Drawing.Point(391, 54);
+            this.labelIyborImena.Location = new System.Drawing.Point(372, 44);
+            this.labelIyborImena.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelIyborImena.Name = "labelIyborImena";
-            this.labelIyborImena.Size = new System.Drawing.Size(112, 22);
+            this.labelIyborImena.Size = new System.Drawing.Size(93, 18);
             this.labelIyborImena.TabIndex = 30;
             this.labelIyborImena.Text = "Ime životinje:";
             // 
@@ -356,9 +376,10 @@
             this.comboBox1.DisplayMember = "Vrsta";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(551, 17);
+            this.comboBox1.Location = new System.Drawing.Point(506, 11);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(244, 24);
+            this.comboBox1.Size = new System.Drawing.Size(184, 21);
             this.comboBox1.TabIndex = 31;
             this.comboBox1.ValueMember = "LjubimacID";
             // 
@@ -368,18 +389,20 @@
             this.comboBox2.DisplayMember = "Ime";
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(551, 56);
+            this.comboBox2.Location = new System.Drawing.Point(507, 41);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(243, 24);
+            this.comboBox2.Size = new System.Drawing.Size(183, 21);
             this.comboBox2.TabIndex = 32;
             this.comboBox2.ValueMember = "LjubimacID";
             // 
             // buttonDodajLjubimca
             // 
             this.buttonDodajLjubimca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.buttonDodajLjubimca.Location = new System.Drawing.Point(141, 416);
+            this.buttonDodajLjubimca.Location = new System.Drawing.Point(106, 338);
+            this.buttonDodajLjubimca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonDodajLjubimca.Name = "buttonDodajLjubimca";
-            this.buttonDodajLjubimca.Size = new System.Drawing.Size(75, 33);
+            this.buttonDodajLjubimca.Size = new System.Drawing.Size(56, 27);
             this.buttonDodajLjubimca.TabIndex = 33;
             this.buttonDodajLjubimca.Text = "Dodaj ljubimca";
             this.buttonDodajLjubimca.UseVisualStyleBackColor = true;
@@ -388,10 +411,10 @@
             // 
             // FormKontaktZakazivanje
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
-            this.ClientSize = new System.Drawing.Size(1063, 608);
+            this.ClientSize = new System.Drawing.Size(709, 395);
             this.Controls.Add(this.buttonDodajLjubimca);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -420,7 +443,7 @@
             this.Controls.Add(this.labelVeterinar);
             this.Controls.Add(this.labelVrstaZiv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormKontaktZakazivanje";
             this.Load += new System.EventHandler(this.FormKontaktZakazivanje_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).EndInit();

@@ -99,5 +99,10 @@ namespace UI_pokusaj.Forms
         {
 
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
