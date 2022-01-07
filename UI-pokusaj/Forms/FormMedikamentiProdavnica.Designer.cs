@@ -44,12 +44,8 @@ namespace UI_pokusaj.Forms
             this.btnPoruci = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.richTextBoxADRESA = new System.Windows.Forms.RichTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBoxBrojTelefona = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxMejl = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBoxPostanskiBroj = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBoxGrad = new System.Windows.Forms.TextBox();
             this.btnOtkaziKupovinu = new System.Windows.Forms.Button();
@@ -83,7 +79,7 @@ namespace UI_pokusaj.Forms
             this.comboBoxProizvodi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxProizvodi.FormattingEnabled = true;
             this.comboBoxProizvodi.Location = new System.Drawing.Point(135, 17);
-            this.comboBoxProizvodi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxProizvodi.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxProizvodi.Name = "comboBoxProizvodi";
             this.comboBoxProizvodi.Size = new System.Drawing.Size(297, 21);
             this.comboBoxProizvodi.TabIndex = 1;
@@ -103,7 +99,7 @@ namespace UI_pokusaj.Forms
             // textBoxTrenutnaKolicina
             // 
             this.textBoxTrenutnaKolicina.Location = new System.Drawing.Point(345, 46);
-            this.textBoxTrenutnaKolicina.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTrenutnaKolicina.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTrenutnaKolicina.Name = "textBoxTrenutnaKolicina";
             this.textBoxTrenutnaKolicina.Size = new System.Drawing.Size(45, 20);
             this.textBoxTrenutnaKolicina.TabIndex = 2;
@@ -113,7 +109,7 @@ namespace UI_pokusaj.Forms
             // 
             this.btnSmanjiKolicinu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSmanjiKolicinu.Location = new System.Drawing.Point(303, 46);
-            this.btnSmanjiKolicinu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSmanjiKolicinu.Margin = new System.Windows.Forms.Padding(2);
             this.btnSmanjiKolicinu.Name = "btnSmanjiKolicinu";
             this.btnSmanjiKolicinu.Size = new System.Drawing.Size(38, 20);
             this.btnSmanjiKolicinu.TabIndex = 3;
@@ -136,7 +132,7 @@ namespace UI_pokusaj.Forms
             // 
             this.btnPovecajKolicinu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPovecajKolicinu.Location = new System.Drawing.Point(394, 45);
-            this.btnPovecajKolicinu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPovecajKolicinu.Margin = new System.Windows.Forms.Padding(2);
             this.btnPovecajKolicinu.Name = "btnPovecajKolicinu";
             this.btnPovecajKolicinu.Size = new System.Drawing.Size(38, 21);
             this.btnPovecajKolicinu.TabIndex = 5;
@@ -158,7 +154,7 @@ namespace UI_pokusaj.Forms
             // textBoxCENA
             // 
             this.textBoxCENA.Location = new System.Drawing.Point(261, 79);
-            this.textBoxCENA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCENA.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCENA.Name = "textBoxCENA";
             this.textBoxCENA.Size = new System.Drawing.Size(129, 20);
             this.textBoxCENA.TabIndex = 7;
@@ -178,7 +174,7 @@ namespace UI_pokusaj.Forms
             // btnPoruci
             // 
             this.btnPoruci.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPoruci.Location = new System.Drawing.Point(338, 370);
+            this.btnPoruci.Location = new System.Drawing.Point(261, 372);
             this.btnPoruci.Name = "btnPoruci";
             this.btnPoruci.Size = new System.Drawing.Size(94, 33);
             this.btnPoruci.TabIndex = 9;
@@ -204,28 +200,11 @@ namespace UI_pokusaj.Forms
             this.richTextBoxADRESA.TabIndex = 12;
             this.richTextBoxADRESA.Text = "";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(14, 266);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 18);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Broj telefona";
-            // 
-            // textBoxBrojTelefona
-            // 
-            this.textBoxBrojTelefona.Location = new System.Drawing.Point(135, 266);
-            this.textBoxBrojTelefona.Name = "textBoxBrojTelefona";
-            this.textBoxBrojTelefona.Size = new System.Drawing.Size(255, 20);
-            this.textBoxBrojTelefona.TabIndex = 17;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(14, 300);
+            this.label8.Location = new System.Drawing.Point(14, 261);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(35, 18);
             this.label8.TabIndex = 18;
@@ -233,50 +212,33 @@ namespace UI_pokusaj.Forms
             // 
             // textBoxMejl
             // 
-            this.textBoxMejl.Location = new System.Drawing.Point(135, 300);
+            this.textBoxMejl.Location = new System.Drawing.Point(135, 261);
             this.textBoxMejl.Name = "textBoxMejl";
             this.textBoxMejl.Size = new System.Drawing.Size(255, 20);
             this.textBoxMejl.TabIndex = 19;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(14, 338);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 18);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "Poštanski broj";
-            // 
-            // textBoxPostanskiBroj
-            // 
-            this.textBoxPostanskiBroj.Location = new System.Drawing.Point(158, 342);
-            this.textBoxPostanskiBroj.Name = "textBoxPostanskiBroj";
-            this.textBoxPostanskiBroj.Size = new System.Drawing.Size(60, 20);
-            this.textBoxPostanskiBroj.TabIndex = 22;
-            this.textBoxPostanskiBroj.TextChanged += new System.EventHandler(this.textBoxPostanskiBroj_TextChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(224, 338);
+            this.label11.Location = new System.Drawing.Point(8, 289);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(41, 18);
             this.label11.TabIndex = 23;
             this.label11.Text = "Grad";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // textBoxGrad
             // 
-            this.textBoxGrad.Location = new System.Drawing.Point(281, 342);
+            this.textBoxGrad.Location = new System.Drawing.Point(135, 287);
             this.textBoxGrad.Name = "textBoxGrad";
-            this.textBoxGrad.Size = new System.Drawing.Size(151, 20);
+            this.textBoxGrad.Size = new System.Drawing.Size(255, 20);
             this.textBoxGrad.TabIndex = 24;
             // 
             // btnOtkaziKupovinu
             // 
             this.btnOtkaziKupovinu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOtkaziKupovinu.Location = new System.Drawing.Point(228, 370);
+            this.btnOtkaziKupovinu.Location = new System.Drawing.Point(151, 372);
             this.btnOtkaziKupovinu.Name = "btnOtkaziKupovinu";
             this.btnOtkaziKupovinu.Size = new System.Drawing.Size(94, 33);
             this.btnOtkaziKupovinu.TabIndex = 25;
@@ -291,9 +253,9 @@ namespace UI_pokusaj.Forms
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(15, 190);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(417, 66);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
@@ -303,7 +265,7 @@ namespace UI_pokusaj.Forms
             // 
             this.radioButtonOnline.AutoSize = true;
             this.radioButtonOnline.Location = new System.Drawing.Point(120, 43);
-            this.radioButtonOnline.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonOnline.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonOnline.Name = "radioButtonOnline";
             this.radioButtonOnline.Size = new System.Drawing.Size(68, 22);
             this.radioButtonOnline.TabIndex = 17;
@@ -315,7 +277,7 @@ namespace UI_pokusaj.Forms
             // 
             this.radioButtonPouzecem.AutoSize = true;
             this.radioButtonPouzecem.Location = new System.Drawing.Point(120, 19);
-            this.radioButtonPouzecem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonPouzecem.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonPouzecem.Name = "radioButtonPouzecem";
             this.radioButtonPouzecem.Size = new System.Drawing.Size(98, 22);
             this.radioButtonPouzecem.TabIndex = 16;
@@ -338,7 +300,7 @@ namespace UI_pokusaj.Forms
             this.comboBoxCena.DisplayMember = "Cena";
             this.comboBoxCena.FormattingEnabled = true;
             this.comboBoxCena.Location = new System.Drawing.Point(496, 79);
-            this.comboBoxCena.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxCena.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxCena.Name = "comboBoxCena";
             this.comboBoxCena.Size = new System.Drawing.Size(92, 21);
             this.comboBoxCena.TabIndex = 27;
@@ -356,12 +318,8 @@ namespace UI_pokusaj.Forms
             this.Controls.Add(this.btnOtkaziKupovinu);
             this.Controls.Add(this.textBoxGrad);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBoxPostanskiBroj);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.textBoxMejl);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBoxBrojTelefona);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.richTextBoxADRESA);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnPoruci);
@@ -375,7 +333,7 @@ namespace UI_pokusaj.Forms
             this.Controls.Add(this.comboBoxProizvodi);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormMedikamentiProdavnica";
             this.Text = " ";
             this.Load += new System.EventHandler(this.FormMedikamentiProdavnica_Load_1);
@@ -403,12 +361,8 @@ namespace UI_pokusaj.Forms
         private System.Windows.Forms.Button btnPoruci;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox richTextBoxADRESA;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBoxBrojTelefona;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBoxMejl;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBoxPostanskiBroj;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBoxGrad;
         private System.Windows.Forms.Button btnOtkaziKupovinu;

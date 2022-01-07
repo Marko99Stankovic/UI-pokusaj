@@ -59,7 +59,7 @@ namespace UI_pokusaj
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(261, 575);
+            this.panelMenu.Size = new System.Drawing.Size(261, 600);
             this.panelMenu.TabIndex = 0;
             // 
             // buttonZivotinje
@@ -175,7 +175,7 @@ namespace UI_pokusaj
             this.panelTitleBar.Location = new System.Drawing.Point(261, 0);
             this.panelTitleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(802, 39);
+            this.panelTitleBar.Size = new System.Drawing.Size(1036, 39);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -186,7 +186,7 @@ namespace UI_pokusaj
             this.buttonMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMinimize.ForeColor = System.Drawing.Color.SlateGray;
             this.buttonMinimize.Image = global::UI_pokusaj.Properties.Resources.streamline_icon_interface_remove_square_48x48;
-            this.buttonMinimize.Location = new System.Drawing.Point(690, 10);
+            this.buttonMinimize.Location = new System.Drawing.Point(924, 10);
             this.buttonMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonMinimize.Name = "buttonMinimize";
             this.buttonMinimize.Size = new System.Drawing.Size(27, 27);
@@ -201,7 +201,7 @@ namespace UI_pokusaj
             this.buttonMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMaximize.ForeColor = System.Drawing.Color.SlateGray;
             this.buttonMaximize.Image = global::UI_pokusaj.Properties.Resources.streamline_icon_computer_keyboard_wire_less_48x48;
-            this.buttonMaximize.Location = new System.Drawing.Point(722, 9);
+            this.buttonMaximize.Location = new System.Drawing.Point(956, 9);
             this.buttonMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonMaximize.Name = "buttonMaximize";
             this.buttonMaximize.Size = new System.Drawing.Size(27, 22);
@@ -216,7 +216,7 @@ namespace UI_pokusaj
             this.buttonEXIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEXIT.ForeColor = System.Drawing.Color.SlateGray;
             this.buttonEXIT.Image = global::UI_pokusaj.Properties.Resources.streamline_icon_interface_delete_1_48x48;
-            this.buttonEXIT.Location = new System.Drawing.Point(754, 6);
+            this.buttonEXIT.Location = new System.Drawing.Point(988, 6);
             this.buttonEXIT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEXIT.Name = "buttonEXIT";
             this.buttonEXIT.Size = new System.Drawing.Size(33, 28);
@@ -230,7 +230,7 @@ namespace UI_pokusaj
             this.labelBar1.AutoSize = true;
             this.labelBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBar1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelBar1.Location = new System.Drawing.Point(365, 7);
+            this.labelBar1.Location = new System.Drawing.Point(482, 7);
             this.labelBar1.Name = "labelBar1";
             this.labelBar1.Size = new System.Drawing.Size(28, 25);
             this.labelBar1.TabIndex = 5;
@@ -244,7 +244,7 @@ namespace UI_pokusaj
             this.panelForma.Location = new System.Drawing.Point(261, 39);
             this.panelForma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelForma.Name = "panelForma";
-            this.panelForma.Size = new System.Drawing.Size(802, 536);
+            this.panelForma.Size = new System.Drawing.Size(1036, 561);
             this.panelForma.TabIndex = 2;
             // 
             // Form1
@@ -253,7 +253,7 @@ namespace UI_pokusaj
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1063, 575);
+            this.ClientSize = new System.Drawing.Size(1297, 600);
             this.Controls.Add(this.panelForma);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);

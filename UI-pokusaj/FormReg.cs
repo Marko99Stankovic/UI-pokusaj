@@ -43,10 +43,7 @@ namespace UI_pokusaj
         {
             const int min = 6;
             string p = textBoxPW.Text;
-            if (p.Length < min)
-            {
-                MessageBox.Show("Lozinka mora da ima BAREM 6 karaktera. Pokusajte opet!");
-            }
+           
 
             if (textBoxUsername1.Text == "" || textBoxPW.Text == "" || textBoxConfirm.Text == ""
                 || textBoxCity.Text == "" || textBoxAdress.Text == "" || textBoxNAME.Text == "" 
@@ -55,25 +52,35 @@ namespace UI_pokusaj
                 MessageBox.Show("Molimo Vas popunite sva polja u formularu za registraciju. Hvala!"); 
             }
 
-         
+            else if (p.Length < min)
+            {
+                MessageBox.Show("Lozinka mora da ima BAREM 6 karaktera. Pokušajte opet!");
+            }
+
             else if(textBoxPW.Text == textBoxConfirm.Text)
             {
-                MessageBox.Show("Uspešno ste kreirali korisnički nalog.");
+                new RegFinal().Show();
+                this.Hide();
+
+                //MessageBox.Show("Uspešno ste kreirali korisnički nalog.");
 
                 // upis svih podataka vezanih za korisnika u bazu //
                 // ime,prezime,brtel,grad,adresa,username i pw //
 
-                textBoxUsername1.Text = "";
-                textBoxPW.Text = "";
-                textBoxConfirm.Text = "";
-                textBoxCity.Text = "";
-                textBoxAdress.Text = "";
-                textBoxNAME.Text = "";
-                textBoxSURNAME.Text = "";
-                textBoxPN.Text = "";
+                //textBoxUsername1.Text = "";
+               // textBoxPW.Text = "";
+                //textBoxConfirm.Text = "";
+                //textBoxCity.Text = "";
+               // textBoxAdress.Text = "";
+               // textBoxNAME.Text = "";
+               // textBoxSURNAME.Text = "";
+               // textBoxPN.Text = "";
 
-            } 
-        else
+            }
+
+           
+
+            else
             {
                 MessageBox.Show("Pokušajte ponovo!", "Lozinke se ne poklapaju");
                 textBoxPW.Text = "";

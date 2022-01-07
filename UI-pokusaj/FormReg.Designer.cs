@@ -280,7 +280,7 @@ namespace UI_pokusaj
             this.buttonReg.Name = "buttonReg";
             this.buttonReg.Size = new System.Drawing.Size(220, 30);
             this.buttonReg.TabIndex = 4;
-            this.buttonReg.Text = "REGISTRUJ SE";
+            this.buttonReg.Text = "DALJE...";
             this.buttonReg.UseVisualStyleBackColor = false;
             this.buttonReg.Click += new System.EventHandler(this.buttonReg_Click);
             // 
