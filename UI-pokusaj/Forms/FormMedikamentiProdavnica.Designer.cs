@@ -32,8 +32,8 @@ namespace UI_pokusaj.Forms
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxProizvodi = new System.Windows.Forms.ComboBox();
-            this.bindingSourceShop = new System.Windows.Forms.BindingSource(this.components);
-            this.bazaDataSet1 = new UI_pokusaj.BazaDataSet();
+            this.bindingSourceShop1 = new System.Windows.Forms.BindingSource(this.components);
+            this.vetSet11 = new UI_pokusaj.VetSet1();
             this.textBoxTrenutnaKolicina = new System.Windows.Forms.TextBox();
             this.btnSmanjiKolicinu = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,66 +52,70 @@ namespace UI_pokusaj.Forms
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButtonOnline = new System.Windows.Forms.RadioButton();
             this.radioButtonPouzecem = new System.Windows.Forms.RadioButton();
-            this.shopTableAdapter = new UI_pokusaj.BazaDataSetTableAdapters.ShopTableAdapter();
-            this.bindingSourceCena = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxCena = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceShop)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).BeginInit();
+            this.bindingSourceCena1 = new System.Windows.Forms.BindingSource(this.components);
+            this.shopTableAdapter1 = new UI_pokusaj.VetSet1TableAdapters.ShopTableAdapter();
+            this.bindingSourcePorudzbina = new System.Windows.Forms.BindingSource(this.components);
+            this.porudzbineTableAdapter = new UI_pokusaj.VetSet1TableAdapters.PorudzbineTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceShop1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vetSet11)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCena)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCena1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePorudzbina)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(16, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 18);
+            this.label1.Size = new System.Drawing.Size(87, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Proizvodi";
             // 
             // comboBoxProizvodi
             // 
-            this.comboBoxProizvodi.DataSource = this.bindingSourceShop;
+            this.comboBoxProizvodi.DataSource = this.bindingSourceShop1;
             this.comboBoxProizvodi.DisplayMember = "Proizvod";
             this.comboBoxProizvodi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxProizvodi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxProizvodi.FormattingEnabled = true;
-            this.comboBoxProizvodi.Location = new System.Drawing.Point(135, 17);
-            this.comboBoxProizvodi.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxProizvodi.Location = new System.Drawing.Point(181, 13);
+            this.comboBoxProizvodi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxProizvodi.Name = "comboBoxProizvodi";
-            this.comboBoxProizvodi.Size = new System.Drawing.Size(297, 21);
+            this.comboBoxProizvodi.Size = new System.Drawing.Size(395, 28);
             this.comboBoxProizvodi.TabIndex = 1;
             this.comboBoxProizvodi.ValueMember = "ShopID";
             this.comboBoxProizvodi.SelectedIndexChanged += new System.EventHandler(this.comboBoxProizvodi_SelectedIndexChanged);
             // 
-            // bindingSourceShop
+            // bindingSourceShop1
             // 
-            this.bindingSourceShop.DataMember = "Shop";
-            this.bindingSourceShop.DataSource = this.bazaDataSet1;
+            this.bindingSourceShop1.DataMember = "Shop";
+            this.bindingSourceShop1.DataSource = this.vetSet11;
             // 
-            // bazaDataSet1
+            // vetSet11
             // 
-            this.bazaDataSet1.DataSetName = "BazaDataSet";
-            this.bazaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.vetSet11.DataSetName = "VetSet1";
+            this.vetSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBoxTrenutnaKolicina
             // 
-            this.textBoxTrenutnaKolicina.Location = new System.Drawing.Point(345, 46);
-            this.textBoxTrenutnaKolicina.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxTrenutnaKolicina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTrenutnaKolicina.Location = new System.Drawing.Point(460, 57);
+            this.textBoxTrenutnaKolicina.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxTrenutnaKolicina.Name = "textBoxTrenutnaKolicina";
-            this.textBoxTrenutnaKolicina.Size = new System.Drawing.Size(45, 20);
+            this.textBoxTrenutnaKolicina.Size = new System.Drawing.Size(59, 27);
             this.textBoxTrenutnaKolicina.TabIndex = 2;
             this.textBoxTrenutnaKolicina.Text = "0";
             // 
             // btnSmanjiKolicinu
             // 
             this.btnSmanjiKolicinu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSmanjiKolicinu.Location = new System.Drawing.Point(303, 46);
-            this.btnSmanjiKolicinu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSmanjiKolicinu.Location = new System.Drawing.Point(404, 57);
+            this.btnSmanjiKolicinu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSmanjiKolicinu.Name = "btnSmanjiKolicinu";
-            this.btnSmanjiKolicinu.Size = new System.Drawing.Size(38, 20);
+            this.btnSmanjiKolicinu.Size = new System.Drawing.Size(51, 25);
             this.btnSmanjiKolicinu.TabIndex = 3;
             this.btnSmanjiKolicinu.Text = "-";
             this.btnSmanjiKolicinu.UseVisualStyleBackColor = true;
@@ -121,20 +125,19 @@ namespace UI_pokusaj.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 41);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(16, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 18);
+            this.label2.Size = new System.Drawing.Size(76, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "Kolicina";
             // 
             // btnPovecajKolicinu
             // 
             this.btnPovecajKolicinu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPovecajKolicinu.Location = new System.Drawing.Point(394, 45);
-            this.btnPovecajKolicinu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPovecajKolicinu.Location = new System.Drawing.Point(525, 55);
+            this.btnPovecajKolicinu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPovecajKolicinu.Name = "btnPovecajKolicinu";
-            this.btnPovecajKolicinu.Size = new System.Drawing.Size(38, 21);
+            this.btnPovecajKolicinu.Size = new System.Drawing.Size(51, 26);
             this.btnPovecajKolicinu.TabIndex = 5;
             this.btnPovecajKolicinu.Text = "+";
             this.btnPovecajKolicinu.UseVisualStyleBackColor = true;
@@ -144,19 +147,20 @@ namespace UI_pokusaj.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 68);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(16, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 18);
+            this.label3.Size = new System.Drawing.Size(55, 24);
             this.label3.TabIndex = 6;
             this.label3.Text = "Cena";
             // 
             // textBoxCENA
             // 
-            this.textBoxCENA.Location = new System.Drawing.Point(261, 79);
-            this.textBoxCENA.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCENA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCENA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCENA.Location = new System.Drawing.Point(404, 95);
+            this.textBoxCENA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCENA.Name = "textBoxCENA";
-            this.textBoxCENA.Size = new System.Drawing.Size(129, 20);
+            this.textBoxCENA.Size = new System.Drawing.Size(171, 21);
             this.textBoxCENA.TabIndex = 7;
             this.textBoxCENA.TextChanged += new System.EventHandler(this.textBoxCENA_TextChanged);
             // 
@@ -164,19 +168,20 @@ namespace UI_pokusaj.Forms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(397, 79);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(582, 97);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 17);
+            this.label4.Size = new System.Drawing.Size(35, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "din.";
             // 
             // btnPoruci
             // 
             this.btnPoruci.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPoruci.Location = new System.Drawing.Point(261, 372);
+            this.btnPoruci.Location = new System.Drawing.Point(394, 390);
+            this.btnPoruci.Margin = new System.Windows.Forms.Padding(4);
             this.btnPoruci.Name = "btnPoruci";
-            this.btnPoruci.Size = new System.Drawing.Size(94, 33);
+            this.btnPoruci.Size = new System.Drawing.Size(125, 41);
             this.btnPoruci.TabIndex = 9;
             this.btnPoruci.Text = "Poruči";
             this.btnPoruci.UseVisualStyleBackColor = true;
@@ -186,17 +191,21 @@ namespace UI_pokusaj.Forms
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 112);
+            this.label5.Location = new System.Drawing.Point(16, 138);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 18);
+            this.label5.Size = new System.Drawing.Size(70, 24);
             this.label5.TabIndex = 10;
             this.label5.Text = "Adresa";
             // 
             // richTextBoxADRESA
             // 
-            this.richTextBoxADRESA.Location = new System.Drawing.Point(135, 118);
+            this.richTextBoxADRESA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxADRESA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxADRESA.Location = new System.Drawing.Point(180, 145);
+            this.richTextBoxADRESA.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxADRESA.Name = "richTextBoxADRESA";
-            this.richTextBoxADRESA.Size = new System.Drawing.Size(297, 67);
+            this.richTextBoxADRESA.Size = new System.Drawing.Size(395, 82);
             this.richTextBoxADRESA.TabIndex = 12;
             this.richTextBoxADRESA.Text = "";
             // 
@@ -204,43 +213,51 @@ namespace UI_pokusaj.Forms
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(14, 261);
+            this.label8.Location = new System.Drawing.Point(19, 321);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 18);
+            this.label8.Size = new System.Drawing.Size(44, 24);
             this.label8.TabIndex = 18;
             this.label8.Text = "Mail";
             // 
             // textBoxMejl
             // 
-            this.textBoxMejl.Location = new System.Drawing.Point(135, 261);
+            this.textBoxMejl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxMejl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMejl.Location = new System.Drawing.Point(180, 324);
+            this.textBoxMejl.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMejl.Name = "textBoxMejl";
-            this.textBoxMejl.Size = new System.Drawing.Size(255, 20);
+            this.textBoxMejl.Size = new System.Drawing.Size(395, 17);
             this.textBoxMejl.TabIndex = 19;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(8, 289);
+            this.label11.Location = new System.Drawing.Point(11, 356);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 18);
+            this.label11.Size = new System.Drawing.Size(51, 24);
             this.label11.TabIndex = 23;
             this.label11.Text = "Grad";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // textBoxGrad
             // 
-            this.textBoxGrad.Location = new System.Drawing.Point(135, 287);
+            this.textBoxGrad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxGrad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGrad.Location = new System.Drawing.Point(181, 349);
+            this.textBoxGrad.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxGrad.Name = "textBoxGrad";
-            this.textBoxGrad.Size = new System.Drawing.Size(255, 20);
+            this.textBoxGrad.Size = new System.Drawing.Size(394, 17);
             this.textBoxGrad.TabIndex = 24;
             // 
             // btnOtkaziKupovinu
             // 
             this.btnOtkaziKupovinu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOtkaziKupovinu.Location = new System.Drawing.Point(151, 372);
+            this.btnOtkaziKupovinu.Location = new System.Drawing.Point(247, 390);
+            this.btnOtkaziKupovinu.Margin = new System.Windows.Forms.Padding(4);
             this.btnOtkaziKupovinu.Name = "btnOtkaziKupovinu";
-            this.btnOtkaziKupovinu.Size = new System.Drawing.Size(94, 33);
+            this.btnOtkaziKupovinu.Size = new System.Drawing.Size(125, 41);
             this.btnOtkaziKupovinu.TabIndex = 25;
             this.btnOtkaziKupovinu.Text = "Otkaži";
             this.btnOtkaziKupovinu.UseVisualStyleBackColor = true;
@@ -252,11 +269,11 @@ namespace UI_pokusaj.Forms
             this.groupBox1.Controls.Add(this.radioButtonPouzecem);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(15, 190);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(20, 234);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(417, 66);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(556, 81);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Način plaćanja";
@@ -264,10 +281,10 @@ namespace UI_pokusaj.Forms
             // radioButtonOnline
             // 
             this.radioButtonOnline.AutoSize = true;
-            this.radioButtonOnline.Location = new System.Drawing.Point(120, 43);
-            this.radioButtonOnline.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButtonOnline.Location = new System.Drawing.Point(160, 53);
+            this.radioButtonOnline.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButtonOnline.Name = "radioButtonOnline";
-            this.radioButtonOnline.Size = new System.Drawing.Size(68, 22);
+            this.radioButtonOnline.Size = new System.Drawing.Size(87, 28);
             this.radioButtonOnline.TabIndex = 17;
             this.radioButtonOnline.TabStop = true;
             this.radioButtonOnline.Text = "Online";
@@ -276,43 +293,52 @@ namespace UI_pokusaj.Forms
             // radioButtonPouzecem
             // 
             this.radioButtonPouzecem.AutoSize = true;
-            this.radioButtonPouzecem.Location = new System.Drawing.Point(120, 19);
-            this.radioButtonPouzecem.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButtonPouzecem.Location = new System.Drawing.Point(160, 23);
+            this.radioButtonPouzecem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButtonPouzecem.Name = "radioButtonPouzecem";
-            this.radioButtonPouzecem.Size = new System.Drawing.Size(98, 22);
+            this.radioButtonPouzecem.Size = new System.Drawing.Size(122, 28);
             this.radioButtonPouzecem.TabIndex = 16;
             this.radioButtonPouzecem.TabStop = true;
             this.radioButtonPouzecem.Text = "Pouzecem";
             this.radioButtonPouzecem.UseVisualStyleBackColor = true;
             // 
-            // shopTableAdapter
-            // 
-            this.shopTableAdapter.ClearBeforeFill = true;
-            // 
-            // bindingSourceCena
-            // 
-            this.bindingSourceCena.DataMember = "Shop";
-            this.bindingSourceCena.DataSource = this.bazaDataSet1;
-            // 
             // comboBoxCena
             // 
-            this.comboBoxCena.DataSource = this.bindingSourceCena;
+            this.comboBoxCena.DataSource = this.bindingSourceCena1;
             this.comboBoxCena.DisplayMember = "Cena";
             this.comboBoxCena.FormattingEnabled = true;
-            this.comboBoxCena.Location = new System.Drawing.Point(496, 79);
-            this.comboBoxCena.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxCena.Location = new System.Drawing.Point(661, 97);
+            this.comboBoxCena.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxCena.Name = "comboBoxCena";
-            this.comboBoxCena.Size = new System.Drawing.Size(92, 21);
+            this.comboBoxCena.Size = new System.Drawing.Size(121, 24);
             this.comboBoxCena.TabIndex = 27;
             this.comboBoxCena.ValueMember = "ShopID";
             this.comboBoxCena.SelectedIndexChanged += new System.EventHandler(this.comboBoxCena_SelectedIndexChanged);
             // 
+            // bindingSourceCena1
+            // 
+            this.bindingSourceCena1.DataMember = "Shop";
+            this.bindingSourceCena1.DataSource = this.vetSet11;
+            // 
+            // shopTableAdapter1
+            // 
+            this.shopTableAdapter1.ClearBeforeFill = true;
+            // 
+            // bindingSourcePorudzbina
+            // 
+            this.bindingSourcePorudzbina.DataMember = "Porudzbine";
+            this.bindingSourcePorudzbina.DataSource = this.vetSet11;
+            // 
+            // porudzbineTableAdapter
+            // 
+            this.porudzbineTableAdapter.ClearBeforeFill = true;
+            // 
             // FormMedikamentiProdavnica
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
-            this.ClientSize = new System.Drawing.Size(654, 445);
+            this.ClientSize = new System.Drawing.Size(872, 548);
             this.Controls.Add(this.comboBoxCena);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnOtkaziKupovinu);
@@ -333,15 +359,16 @@ namespace UI_pokusaj.Forms
             this.Controls.Add(this.comboBoxProizvodi);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormMedikamentiProdavnica";
             this.Text = " ";
             this.Load += new System.EventHandler(this.FormMedikamentiProdavnica_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceShop)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceShop1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vetSet11)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCena)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCena1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePorudzbina)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,12 +394,14 @@ namespace UI_pokusaj.Forms
         private System.Windows.Forms.TextBox textBoxGrad;
         private System.Windows.Forms.Button btnOtkaziKupovinu;
         private System.Windows.Forms.GroupBox groupBox1;
-        private BazaDataSet bazaDataSet1;
-        private System.Windows.Forms.BindingSource bindingSourceShop;
-        private BazaDataSetTableAdapters.ShopTableAdapter shopTableAdapter;
-        private System.Windows.Forms.BindingSource bindingSourceCena;
         private System.Windows.Forms.ComboBox comboBoxCena;
         private System.Windows.Forms.RadioButton radioButtonOnline;
         private System.Windows.Forms.RadioButton radioButtonPouzecem;
+        private VetSet1 vetSet11;
+        private System.Windows.Forms.BindingSource bindingSourceShop1;
+        private VetSet1TableAdapters.ShopTableAdapter shopTableAdapter1;
+        private System.Windows.Forms.BindingSource bindingSourceCena1;
+        private System.Windows.Forms.BindingSource bindingSourcePorudzbina;
+        private VetSet1TableAdapters.PorudzbineTableAdapter porudzbineTableAdapter;
     }
 }

@@ -23,10 +23,15 @@ namespace UI_pokusaj.Forms
 
         private void FormKontaktZakazivanje_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'bazaDataSet1.Veterinar' table. You can move, or remove it, as needed.
-            this.veterinarTableAdapter.Fill(this.bazaDataSet1.Veterinar);
-            //TODO: This line of code loads data into the 'bazaDataSet1.Ljubimac' table. You can move, or remove it, as needed.
-            this.ljubimacTableAdapter.Fill(this.bazaDataSet1.Ljubimac);
+            // TODO: This line of code loads data into the 'vetSet11.Pregledi' table. You can move, or remove it, as needed.
+            this.preglediTableAdapter.Fill(this.vetSet11.Pregledi);
+            // TODO: This line of code loads data into the 'vetSet11.Veterinar' table. You can move, or remove it, as needed.
+            this.veterinarTableAdapter1.Fill(this.vetSet11.Veterinar);
+            // TODO: This line of code loads data into the 'vetSet11.Ljubimac' table. You can move, or remove it, as needed.
+            this.ljubimacTableAdapter1.Fill(this.vetSet11.Ljubimac);
+            // TODO: This line of code loads data into the 'vetSet11.Vlasnik' table. You can move, or remove it, as needed.
+            this.vlasnikTableAdapter1.Fill(this.vetSet11.Vlasnik);
+     
 
         }
 
@@ -108,7 +113,7 @@ namespace UI_pokusaj.Forms
         {
             if (textBoxImeZivotinje.Text != "" && textBoxUnosVrsteZivotinje.Text != "" && textBoxUnosrase.Text != "")
             {
-                var row = bazaDataSet1.Ljubimac.NewLjubimacRow();
+                var row = vetSet11.Ljubimac.NewLjubimacRow();
                 row.Ime = textBoxImeZivotinje.Text;
                 row.Vrsta = textBoxUnosVrsteZivotinje.Text;
                 row.Rasa = textBoxUnosrase.Text;
@@ -118,8 +123,8 @@ namespace UI_pokusaj.Forms
                 row.Rodjendan = dateTimePickerrodj.Value;
                 //vet?????
                 //vlasnik nekako nzm
-                bazaDataSet1.Ljubimac.AddLjubimacRow(row);
-                ljubimacTableAdapter.Update(bazaDataSet1);
+                vetSet11.Ljubimac.AddLjubimacRow(row);
+                ljubimacTableAdapter1.Update(vetSet11);
 
                 MessageBox.Show($"Dodat je {textBoxImeZivotinje.Text} kao Vaš novi ljubimac", "Možete zakazati pregled", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 textBoxImeZivotinje.Clear();
@@ -147,6 +152,15 @@ namespace UI_pokusaj.Forms
             radioButtonPolM.Show();
             radioButtonPolZ.Show();
             buttonDodajLjubimca.Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
