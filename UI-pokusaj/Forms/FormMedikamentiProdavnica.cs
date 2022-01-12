@@ -110,6 +110,10 @@ namespace UI_pokusaj.Forms
                                     ////////////////////////////////////////////////////////
                                     //ovo ne brise nego postavlja sve na 0 u tabelu za tu porudzbiu...----------------KAKO OBRISATI RED 
 
+               
+
+
+
 
                 ////////////////////////////////////////////////////////
             }
@@ -143,6 +147,5 @@ namespace UI_pokusaj.Forms
         {
            //postoji samo zbog preuzimanja cene||| VRV postoji bolje resenje...
         }
-
     }
 }
